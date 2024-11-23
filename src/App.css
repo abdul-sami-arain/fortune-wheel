@@ -396,8 +396,17 @@ cursor: pointer;
 }
 
 .central_circle_progress{
-  height: 180px;
-    width: 180px;
+  height: 140px;
+    width: 140px;
+}
+.central_circle_progress h2{
+  font-size: 22px !important;
+}
+.central_circle_progress span{
+  font-size: 22px !important;
+}
+.central_circle_progress .span2{
+  font-size: 41px !important;
 }
 
 
@@ -462,7 +471,10 @@ cursor: pointer;
     left: 41.4%;
 }
 
-
+.central_circle_progress {
+  height: 130px;
+  width: 130px;
+}
 .central_circle_2{
   height: 290px;
   width: 290px;
