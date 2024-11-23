@@ -324,6 +324,7 @@ cursor: pointer;
 .couponCard{
   width: 290px !important;
   height: auto !important;
+  padding: 8px 0 0 0 !important;
 }
 .right_cut{
   height: 25px !important;
@@ -335,7 +336,7 @@ cursor: pointer;
 }
 .couponCard h4{
   font-size: 28px !important;
-  margin: 0 0 15px 0 !important;
+  margin: 0 0 5px 0 !important;
 }
 .couponCard p{
   font-size: 12px !important;
@@ -378,12 +379,17 @@ cursor: pointer;
     padding: 20px;
   }
   .central_circle{
-    height: 200px;
-    width: 200px;
+    height: 290px;
+    width: 290px;
+  }
+  .underlined-input{
+    width: 260px !important;
   }
   .central_circle h2 {
     font-size: 38px;
   }
+
+  
 
   .arrow {
     left: 41.4%;
@@ -446,8 +452,11 @@ cursor: pointer;
     padding: 20px;
   }
   .central_circle{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
+  }
+  .underlined-input{
+    width: 230px !important;
   }
   .arrow {
     left: 41.4%;
