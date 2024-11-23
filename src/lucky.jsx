@@ -28,7 +28,7 @@ const LuckySpinCustom = () => {
   const [uid, setUid] = useState("");
   const [loading, isLoading] = useState(false);
   const [winner, setWinner] = useState("");
-  const [currentStep, setCurrentStep] = useState(2);
+  const [currentStep, setCurrentStep] = useState(0);
   const [showConfetti, setShowConfetti] = useState(false);
   const [showCongrat, setShowCongrats] = useState(false);
   const canvasRef = useRef(null);
