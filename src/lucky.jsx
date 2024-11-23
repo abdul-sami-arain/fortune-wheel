@@ -227,7 +227,8 @@ const LuckySpinCustom = () => {
         }}
         className="spinner"
       >
-        <DottedCircle
+      <div className="main-dotted">
+      <DottedCircle
           radius={264} // Radius of the circle
           dotCount={24} // Number of dots
           dotRadius={7.5} // Size of each dot
@@ -235,9 +236,11 @@ const LuckySpinCustom = () => {
           left={-3}
           top={-2}
           isBlink={currentStep === 3}
-          className={"main-dotted"}
+          
         />
+      </div>
 
+{/* <div className="main-dotted-580">
 <DottedCircle
           radius={185} // Radius of the circle
           dotCount={24} // Number of dots
@@ -246,9 +249,12 @@ const LuckySpinCustom = () => {
           left={-3}
           top={-5}
           isBlink={currentStep === 3}
-          className={"main-dotted-580"}
+          className={""}
         />
 
+</div> */}
+
+{/* <div className="main-dotted-410">
 <DottedCircle
           radius={160} // Radius of the circle
           dotCount={24} // Number of dots
@@ -257,9 +263,12 @@ const LuckySpinCustom = () => {
           left={1}
           top={1}
           isBlink={currentStep === 3}
-          className={"main-dotted-410"}
+          className={""}
         />
+</div> */}
 
+
+{/* <div className="main-dotted-350">
 <DottedCircle
           radius={145} // Radius of the circle
           dotCount={24} // Number of dots
@@ -268,8 +277,12 @@ const LuckySpinCustom = () => {
           left={0}
           top={2}
           isBlink={currentStep === 3}
-          className={"main-dotted-350"}
+          className={""}
         />
+</div> */}
+
+
+
         <canvas
           className={showCongrat ? "wheel-canvas display_none" : "wheel-canvas"}
           ref={canvasRef}
