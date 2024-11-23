@@ -11,6 +11,7 @@ const DottedCircle = ({
   bottom,
   animationDelayFactor = 0.1, // Default factor for animation delay
   isBlink = false, // Controls blinking
+  className
 }) => {
   const centerX = size / 2; // Center of the SVG (x-axis)
   const centerY = size / 2; // Center of the SVG (y-axis)
@@ -29,7 +30,7 @@ const DottedCircle = ({
       height={size}
       viewBox={`0 0 ${size} ${size}`}
       xmlns="http://www.w3.org/2000/svg"
-      className="dotted-circle"
+      className={`dotted-circle ${className}`}
       style={{
         left: left,
         right: right,

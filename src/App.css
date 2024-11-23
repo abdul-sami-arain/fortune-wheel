@@ -52,7 +52,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: rgba(255, 196, 0, 0.8) 0px 30px 90px;
+  box-shadow: rgba(255, 196, 0, 0.8) 0px 0px 90px;
   opacity: 1;
   animation: surpriseAnimation2 2s forwards; 
 }
@@ -84,7 +84,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: rgba(255, 196, 0, 0.8) 0px 30px 90px;
+  box-shadow: rgba(255, 196, 0, 0.8) 0px 0px 90px;
   display: flex;
 }
 
@@ -157,19 +157,19 @@ text-align: center;
 
 .central_circle_progress h2{
   color: #252B31;
-  font-size: 38px;
+  font-size: 26px;
   line-height: 26px;
   text-align: center;
 }
 .central_circle_progress .span2{
   color: #bc0022;
-  font-size: 38px;
+  font-size: 46px;
   line-height: 26px;
   text-align: center;
 }
 .central_circle_progress span{
   color: #FFAA00;
-  font-size: 16px;
+  font-size: 26px;
   line-height: 31px;
   text-align: center;
 }
@@ -265,12 +265,68 @@ cursor: pointer;
   display: flex !important;
 }
 
-@media (max-width: 700px) {
-  .spinner .wheel-canvas {
-    width: 400px;
-    height: 400px;
+.main-dotted{
+  display: flex;
+}
+.main-dotted-580{
+  display: none;
+}
+
+.main-dotted-410{
+  display: none;
+}
+.main-dotted-350{
+  display: none;
+}
+
+@media (max-width: 580px) {
+  .wheel-canvas {
+    width: 350px;
+    height: 350px;
+    /* padding: 20px; */
+  }
+  .spinner button {
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .spinner{
+    width: 350px !important;
+    height: 350px !important;
     padding: 20px;
-    background-color: red;
+  }
+  .central_circle{
+    height: 300px;
+    width: 300px;
+  }
+  .arrow {
+    left: 42.4%;
+}
+
+
+
+.main-dotted{
+  display: none;
+}
+.main-dotted-580{
+  display: flex !important;
+}
+
+.main-dotted-410{
+  display: none;
+}
+.main-dotted-350{
+  display: none;
+}
+}
+
+
+
+@media (max-width: 410px) {
+  .wheel-canvas {
+    width: 300px;
+    height: 300px;
+    /* padding: 20px; */
   }
 
 
@@ -281,17 +337,76 @@ cursor: pointer;
     font-size: 14px;
   }
   .spinner{
-
+    width: 300px !important;
+    height: 300px !important;
+    padding: 20px;
   }
   .central_circle{
     height: 300px;
     width: 300px;
   }
-  .arrow{
-    right:30px;
-  }
+  .arrow {
+    left: 41.4%;
 }
 
+.main-dotted{
+  display: none;
+}
+.main-dotted-580{
+  display: none;
+}
+
+.main-dotted-410{
+  display: flex !important;
+}
+.main-dotted-350{
+  display: none;
+}
+}
+
+
+
+@media (max-width: 350px) {
+  .wheel-canvas {
+    width: 270px;
+    height: 270px;
+    /* padding: 20px; */
+  }
+
+
+
+  .spinner button {
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .spinner{
+    width: 270px !important;
+    height: 270px !important;
+    padding: 20px;
+  }
+  .central_circle{
+    height: 300px;
+    width: 300px;
+  }
+  .arrow {
+    left: 41.4%;
+}
+
+.main-dotted{
+  display: none;
+}
+.main-dotted-580{
+  display: none;
+}
+
+.main-dotted-410{
+  display: none;
+}
+.main-dotted-350{
+  display: flex;
+}
+}
 
 
 .underlined-input {
@@ -377,7 +492,7 @@ cursor: pointer;
 .couponCard h4{
   font-family: 'Poppins';
   font-weight: 700;
-  font-size: 28px;
+  font-size: 40px;
   margin: 0 0 30px 0;
   text-align: center;
   width: 80%;

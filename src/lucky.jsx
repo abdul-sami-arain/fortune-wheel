@@ -13,6 +13,14 @@ import CouponCard from "./coupon";
 import arrow from "./assets/arrow.png";
 import arrow2 from "./assets/arrow2.png";
 import arrow3 from "./assets/arrow3.png";
+import green1 from "./assets/green1.png";
+import green2 from "./assets/green2.png";
+import blue1 from "./assets/blue1.png";
+import blue2 from "./assets/blue2.png";
+import red1 from "./assets/red1.png";
+import red2 from "./assets/red2.png";
+
+
 
 const LuckySpinCustom = () => {
   const [isWin, setWin] = useState(false);
@@ -51,12 +59,12 @@ const LuckySpinCustom = () => {
   }
 
   const prizes = [
-    { name: "Prize 1", image: img7, prize: "$25 off your order of $499.99 or more", uid: "67403239561b22475e89b915" },
-    { name: "Prize 2", image: trans, prize: "Free mattress set with purchase of bedroom set $1199.99 or more", uid: "6740575822ae7b6151f18669" },
-    { name: "Prize 3", image: trans, prize: "Free delivery with purchase of $799.99 or more", uid: "6740577222ae7b6151f186d0" },
-    { name: "Prize 4", image: trans, prize: "$99.99 worth of Free accessories with purchase of $999.99 or more", uid: "6740578822ae7b6151f18737" },
-    { name: "Prize 5", image: img5, prize: "10% off on your order of $999.99 or more", uid: "6740579d22ae7b6151f1879e" },
-    { name: "Prize 6", image: trans, prize: "Free 75 inch TV with purchase of $5000 or more", uid: "674057c522ae7b6151f18805" },
+    { name: "Prize 1", image: red1, prize: "Free delivery with purchase of $799.99 or more", uid: "67420ea6af83b7c9576693ee" },
+    { name: "Prize 2", image: blue1, prize: "Free mattress set with purchase of bedroom set $1199.99 or more", uid: "67420f5a5cded613e0c64a28" },
+    { name: "Prize 3", image: green2, prize: "$25 off your order of $499.99 or more", uid: "67420f98f24bdf21bfbed399" },
+    { name: "Prize 4", image: red2, prize: "Free 75 inch TV with purchase of $5000 or more", uid: "67420fc5957505712aa809d2" },
+    { name: "Prize 5", image: blue2, prize: "$99.99 worth of Free accessories with purchase of $999.99 or more", uid: "67420fec4969846664665186" },
+    { name: "Prize 6", image: green1, prize: "10% off on your order of $999.99 or more", uid: "674210242e79c3d5a5cbfd72" },
     // { name: "Prize 6", image: img3 }
   ];
   // const bgcolors = ["#bc0022", "#22bc00", "#0022bc", "#bc0022", "#22bc00", "#0022bc"];
@@ -64,6 +72,9 @@ const LuckySpinCustom = () => {
   const segments = prizes.length;
   const segmentAngle = 360 / segments;
   const images = useRef([]);
+
+
+  
 
   // Preload images
   useEffect(() => {
@@ -111,10 +122,10 @@ const LuckySpinCustom = () => {
 
       // Draw prize image
       if (images.current[i]) {
-        const imgSize = radius * 0.8; // Adjust the size of the image as needed
+        const imgSize = radius * 1.95; // Adjust the size of the image as needed
         const textAngle = startAngle + (endAngle - startAngle) / 2;
-        const imgX = centerX + radius * 0.7 * Math.cos(textAngle) - imgSize / 2;
-        const imgY = centerY + radius * 0.8 * Math.sin(textAngle) - imgSize / 2;
+        const imgX = centerX + radius * 0.15 * Math.cos(textAngle) - imgSize / 2;
+        const imgY = centerY + radius * 0.15 * Math.sin(textAngle) - imgSize / 2;
 
         ctx.drawImage(images.current[i], imgX, imgY, imgSize, imgSize);
       }
@@ -224,6 +235,40 @@ const LuckySpinCustom = () => {
           left={-3}
           top={-2}
           isBlink={currentStep === 3}
+          className={"main-dotted"}
+        />
+
+<DottedCircle
+          radius={185} // Radius of the circle
+          dotCount={24} // Number of dots
+          dotRadius={5.5} // Size of each dot
+          size={400} // SVG canvas size
+          left={-3}
+          top={-5}
+          isBlink={currentStep === 3}
+          className={"main-dotted-580"}
+        />
+
+<DottedCircle
+          radius={160} // Radius of the circle
+          dotCount={24} // Number of dots
+          dotRadius={5.5} // Size of each dot
+          size={340} // SVG canvas size
+          left={1}
+          top={1}
+          isBlink={currentStep === 3}
+          className={"main-dotted-410"}
+        />
+
+<DottedCircle
+          radius={145} // Radius of the circle
+          dotCount={24} // Number of dots
+          dotRadius={5.5} // Size of each dot
+          size={310} // SVG canvas size
+          left={0}
+          top={2}
+          isBlink={currentStep === 3}
+          className={"main-dotted-350"}
         />
         <canvas
           className={showCongrat ? "wheel-canvas display_none" : "wheel-canvas"}
@@ -265,7 +310,7 @@ const LuckySpinCustom = () => {
             onClick={spinWheel}
             disabled={isSpinning}
           >
-            GET SPIN
+            START
           </button>
 
         </div>
