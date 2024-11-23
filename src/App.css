@@ -291,8 +291,11 @@ cursor: pointer;
     padding: 20px;
   }
   .central_circle{
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
+  }
+  .central_circle h2 {
+    font-size: 38px;
   }
   .arrow {
     left: 42.4%;
@@ -346,6 +349,9 @@ cursor: pointer;
 .central_circle_2 h2{
   top: 45px !important;
   font-size: 25px !important;
+}
+.spinner button{
+  left: auto !important;
 }
 }
 
