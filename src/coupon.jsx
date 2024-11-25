@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CouponCard({prize}) {
     const redirectToUrl = (url) => {
-        window.location.href = url;
+        window.open(url, '_blank');
       };
     return(
        <div className="coupon_card_pre">
